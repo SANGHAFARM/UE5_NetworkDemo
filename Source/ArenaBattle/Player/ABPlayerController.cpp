@@ -60,3 +60,12 @@ void AABPlayerController::BeginPlay()
 	FInputModeGameOnly GameOnlyInputMode;
 	SetInputMode(GameOnlyInputMode);
 }
+
+void AABPlayerController::OnPossess(APawn* InPawn)
+{
+	AB_LOG(LogABNetwork, Log, TEXT("%s"), TEXT("Begin"));
+	
+	Super::OnPossess(InPawn);
+	
+	AB_LOG(LogABNetwork, Log, TEXT("%s"), TEXT("End"));
+}
