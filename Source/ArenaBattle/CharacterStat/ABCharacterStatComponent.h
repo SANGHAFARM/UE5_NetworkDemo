@@ -81,4 +81,7 @@ protected:
 
 	UPROPERTY(Transient, ReplicatedUsing = OnRep_ModifierStat, VisibleInstanceOnly, Category = Stat, Meta = (AllowPrivateAccess = "true"))
 	FABCharacterStat ModifierStat;
+
+public:
+	void ResetStat();
 };
